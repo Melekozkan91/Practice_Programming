@@ -13,7 +13,7 @@ public class Angles {
         // create scanner object
         Scanner input = new Scanner(System.in);
         // asks the user to 3 angle numbers
-        System.out.println("Enter 3 angle nubers");
+        System.out.println("Enter 3 angle numbers");
         double degreOne = input.nextDouble(),
                 degreTwo = input.nextDouble(),
                 degreThree = input.nextDouble();
@@ -32,6 +32,6 @@ public class Angles {
 
         // Write a print statement that print if it is EITHER triangle or Circle
 
-        System.out.println("It os either triangle ir circle " + (total == 180 || total == 360));
+        System.out.println("It is either triangle or circle " + (total == 180 || total == 360));
     }
 }
