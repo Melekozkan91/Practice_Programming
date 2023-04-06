@@ -42,9 +42,57 @@ public class StringUtil {
 
     }
 
+    /**
+     * This method will accept a String with multiple words
+     * And convert it to camelCse String
+     * input
+     * :
+     * JAVA will ruLE tHe wORLd
+     * output:
+     * javaWillRuleTheWorld
+     */
+
+    public static String camelCase (String str){
+        String [] arr =str.split(" ");
+        String result ="";
+        for (String each:arr) {
+            result += (each.charAt(0)+"").toUpperCase()+each.substring(1).toUpperCase();
+        }
+        return (result.charAt(0)+"").toLowerCase()+result.substring(1);
+
+
+
+    }
+
+    /**
+     * This method accepts String and a char
+     * And returns how many times that char exist in the String
+     *
+     * input:
+     * apple,z
+     * output:
+     * 0
+     */
+    public static  int frequencyOfCharacter(String str, char ch){
+        //aabbaacca, a
+        int count =0;
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i)==ch){
+                count++;
+
+
+            }
+
+        }
+        return count;
+    }
+
+
 
 
 
 
 
 }
+
+
