@@ -72,6 +72,7 @@ public class StringUtil {
      * apple,z
      * output:
      * 0
+     *
      */
     public static  int frequencyOfCharacter(String str, char ch){
         //aabbaacca, a
